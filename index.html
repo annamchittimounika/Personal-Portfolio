@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chittimounika Annam - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for animations and interactivity */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f3f4f6;
+            color: #374151;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .active-section {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .nav-link.active {
+            font-weight: 700;
+            color: #4f46e5; /* Tailwind indigo-600 */
+            border-bottom: 2px solid #4f46e5;
+        }
+        .nav-link {
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding-bottom: 2px;
+        }
+        /* Smooth transition for hover effects on sections and links */
+        section {
+            transition: all 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px -5px rgba(79, 70, 229, 0.2), 0 8px 10px -6px rgba(79, 70, 229, 0.15);
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px -5px rgba(79, 70, 229, 0.2), 0 8px 10px -6px rgba(79, 70, 229, 0.15);
+        }
+        .skill-badge {
+            display: inline-block;
+            background-color: #e0e7ff; /* indigo-100 */
+            color: #4338ca; /* indigo-700 */
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px; /* full rounded */
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+        .skill-badge:hover {
+            transform: scale(1.05);
+            background-color: #c7d2fe; /* indigo-200 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-inter text-gray-800">
+    <header class="bg-white shadow-lg sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-700 font-poppins">ANNAM CHITTIMOUNIKA</a>
+            <nav class="space-x-6">
+                <a href="#about" class="nav-link text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#education" class="nav-link text-gray-600 hover:text-indigo-600 transition duration-300">Education</a>
+                <a href="#experience" class="nav-link text-gray-600 hover:text-indigo-600 transition duration-300">Experience</a>
+                <a href="#projects" class="nav-link text-gray-600 hover:text-indigo-600 transition duration-300">Projects</a>
+                <a href="#contact" class="nav-link text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="about" class="mb-16 bg-white rounded-xl shadow-md p-8 section-card flex flex-col md:flex-row items-center">
+            <div class="md:w-1/4 flex justify-center md:justify-start mb-6 md:mb-0 md:mr-8">
+                <img src="./Profile_optimized_400 (1).jpg" alt="Chittimounika Annam" class="rounded-full w-48 h-48 object-cover border-4 border-indigo-500 shadow-lg">
+            </div>
+            <div class="md:w-3/4">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6 font-poppins">About </h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Highly motivated and dedicated Computer Science Engineering fresher with a strong academic background and a passion for innovation and problem-solving. Familiar with programming, web development, and cloud technologies. Eager to apply my skills and grow in a challenging and learning-driven environment that encourages creativity and career development.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Motivated and detail-oriented Full Stack Java developer** with hands-on experience in building scalable web applications using Java, Spring Boot, Hibernate, React.js, and MySQL. I have completed a comprehensive Full Stack Java internship, demonstrating strong skills in RESTful API development, responsive frontend design, and independent project delivery.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Additionally, I completed a Salesforce Virtual Internship powered by Smartbridge, gaining proficiency in Salesforce development through the Developer Super Set Trailmix on Trailhead. I am skilled in version control with Git, debugging, and testing, with a strong foundation in cloud technologies and CRM customization. I am eager to contribute technical expertise and a continuous learning mindset to a dynamic software development team.
+                </p>
+                
+                <h3 class="text-2xl font-semibold text-gray-700 mt-8 mb-4 font-poppins">Skills</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C++</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">React.js</span>
+                    <span class="skill-badge">Spring Boot</span>
+                    <span class="skill-badge">RESTful APIs</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Docker</span>
+                    <span class="skill-badge">Kubernetes</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">AWS</span>
+                    <span class="skill-badge">Google Cloud</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="mb-16 bg-white rounded-xl shadow-md p-8 section-card">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 font-poppins">Education</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-indigo-500 pl-6 relative">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Bachelor of Technology - Computer Science Engineering</h3>
+                    <p class="text-gray-600 italic">Malineni Perumallu Educational Society's Group of Institutions</p>
+                    <p class="text-gray-500 text-sm mt-1">2021-2025 | CGPA: 7.9/10</p>
+                    <p class="text-gray-600 mt-2">Relevant Courses: Data Structures & Algorithms, Operating Systems, Database Management Systems, Software Engineering, Artificial Intelligence, Machine Learning.</p>
+                </div>
+                <div class="border-l-4 border-indigo-500 pl-6 relative">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Board of Intermediate Education, Andhra Pradesh</h3>
+                    <p class="text-gray-600 italic">Sri Chaitanya Junior College</p>
+                    <p class="text-gray-500 text-sm mt-1">2019-2021 | Marks: 909/1000</p>
+                </div>
+                <div class="border-l-4 border-indigo-500 pl-6 relative">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Board of Secondary Education, Andhra Pradesh</h3>
+                    <p class="text-gray-600 italic">Zilla Parishad High School</p>
+                    <p class="text-gray-500 text-sm mt-1">2018-2019 | CGPA: 9.2/10</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16 bg-white rounded-xl shadow-md p-8 section-card">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 font-poppins">Experience</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-indigo-500 pl-6 relative">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Full Stack Java Intern</h3>
+                    <p class="text-gray-600 italic">SkillDzire in Collaboration with AICTE</p>
+                    <p class="text-gray-500 text-sm mt-1">April 2024 - June 2024</p>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 mt-2 leading-relaxed">
+                        <li>Developed full-stack web applications using Java, Spring Boot, and Hibernate.</li>
+                        <li>Built responsive user interfaces with React.js, HTML, CSS, and JavaScript.</li>
+                        <li>Designed and consumed RESTful APIs to connect frontend and backend systems.</li>
+                        <li>Managed databases using MySQL and performed CRUD operations efficiently.</li>
+                        <li>Used Git for version control and handled all aspects of debugging and testing.</li>
+                    </ul>
+                </div>
+                <div class="border-l-4 border-indigo-500 pl-6 relative">
+                    <div class="absolute -left-2 top-0 w-4 h-4 bg-indigo-500 rounded-full"></div>
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Salesforce Developer Virtual Internship</h3>
+                    <p class="text-gray-600 italic">Salesforce (Short Term Internship)</p>
+                    <p class="text-gray-500 text-sm mt-1">November 2023 - December 2023</p>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 mt-2 leading-relaxed">
+                        <li>Gained hands-on knowledge of Salesforce development concepts by completing the Developer Super Set Trailmix.</li>
+                        <li>Learned and applied Salesforce fundamentals, including Apex programming and Lightning Components.</li>
+                        <li>Enhanced understanding of Salesforce CRM features and cloud technologies through self-paced virtual training.</li>
+                        <li>Used developer tools such as VS Code and Salesforce CLI for practical assignments.</li>
+                        <li>Earned the "Developer Super Set" badge on Trailhead.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16 bg-white rounded-xl shadow-md p-8 section-card">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 font-poppins">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-xl shadow-lg p-6 project-card">
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Secure Cloud-Based Healthcare Management System</h3>
+                    <p class="text-gray-600 text-sm mt-2 mb-4">Technologies:Java, HTML, JSP, Servlets, JDBC, MySQL, Cloud Computing, IoT.</p>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Built a medical data management system with patient registration, report uploads, doctor suggestions, and attribute-based data encryption for enhanced security.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
+                        <li>Designed a secure healthcare application using cloud computing architecture.</li>
+                        <li>Implemented patient and doctor registration with role-based access control.</li>
+                        <li>Integrated AES encryption to secure sensitive medical data.</li>
+                        <li>Developed file upload and download functionality with real-time access control.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 rounded-xl shadow-lg p-6 project-card">
+                    <h3 class="text-xl font-semibold text-gray-700 font-poppins">Intelligent Fashion Design System Using AI</h3>
+                    <p class="text-gray-600 text-sm mt-2 mb-4">Technologies: Python (FastAPI, TensorFlow), Flutter, Unity (C#), PostgreSQL, AWS.</p>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        An interactive application using AI and 3D rendering to provide real-time visual outfit suggestions through a user-friendly Flutter interface.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1 text-sm">
+                        <li>Developed a cross-platform mobile app with Flutter for outfit visualization.</li>
+                        <li>Leveraged an integrated AI model with computer vision for real-time, personalized outfit suggestions.</li>
+                        <li>Used a 3D rendering engine to dynamically "dress" a virtual avatar, allowing users to see outfits from all angles.</li>
+                        <li>Combined AI and 3D rendering to create a powerful and engaging interactive styling tool.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16 bg-white rounded-xl shadow-md p-8 section-card">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 font-poppins">Contact</h2>
+            <p class="text-gray-700 mb-6 leading-relaxed">
+                Feel free to reach out to me via email or connect with me on social media. I'm always open to discussing new opportunities and collaborations.
+            </p>
+            <div class="flex flex-col space-y-4">
+                <a href="mailto:chittimounikaannam@gmail.com" class="text-lg text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                    chittimounikaannam@gmail.com
+                </a>
+                <a href="tel:+918790085822" class="text-lg text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 3.697a1 1 0 01-.16.996l-1.465 1.465a10.057 10.057 0 006.304 6.304l1.464-1.465a1 1 0 01.996-.16l3.697.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.147 18 2 12.853 2 6V4z"></path></svg>
+                    +91-8790085822
+                </a>
+                <a href="https://github.com/annamchittimounika" target="_blank" class="text-lg text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.417 2.865 8.163 6.832 9.467.5.09.682-.218.682-.483 0-.237-.008-.865-.013-1.7-2.782.604-3.375-1.341-3.375-1.341-.454-1.151-1.11-1.458-1.11-1.458-.908-.621.068-.609.068-.609 1.004.072 1.531 1.032 1.531 1.032.892 1.528 2.341 1.084 2.91.829.091-.643.349-1.084.636-1.334-2.22-.252-4.555-1.11-4.555-4.942 0-1.09.39-1.983 1.03-2.675-.104-.252-.447-1.266.097-2.638 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0110 4.773c.85.006 1.705.115 2.502.336 1.909-1.294 2.748-1.026 2.748-1.026.545 1.372.202 2.386.1 2.638.64.692 1.03 1.585 1.03 2.675 0 3.842-2.339 4.686-4.562 4.935.359.31.678.922.678 1.865 0 1.345-.012 2.428-.012 2.752 0 .268.18.579.688.483C17.135 18.18 20 14.434 20 10.017c0-5.533-4.477-10.017-10-10.017z" clip-rule="evenodd"></path></svg>
+                    github.com/annamchittimounika
+                </a>
+                <a href="https://www.linkedin.com/in/annam-chitti-mounika/" target="_blank" class="text-lg text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16 4a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4zm-2 2a1 1 0 00-1-1H7a1 1 0 00-1 1v1a1 1 0 001 1h6a1 1 0 001-1V6zm-1 3a1 1 0 00-1-1H7a1 1 0 00-1 1v5a1 1 0 001 1h6a1 1 0 001-1V9z" clip-rule="evenodd"></path></svg>
+                    linkedin.com/in/annam-chitti-mounika/
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-200 text-gray-600 py-6 text-center">
+        <p>&copy; 2024 Chittimounika Annam. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section');
+
+        function updateActiveSection() {
+            let currentSectionId = '';
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 100 && scrollY < sectionTop + sectionHeight - 100) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === currentSectionId) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        function smoothScroll(targetId) {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                const headerOffset = document.querySelector('header').offsetHeight;
+                const elementPosition = targetElement.offsetTop;
+                const offsetPosition = elementPosition - headerOffset - 20;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const targetId = link.getAttribute('href').slice(1);
+                smoothScroll(targetId);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', updateActiveSection);
+        window.addEventListener('scroll', updateActiveSection);
+    </script>
+</body>
+</html>
