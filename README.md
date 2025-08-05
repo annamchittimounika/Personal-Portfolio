@@ -8,7 +8,7 @@ This site is built to showcase my **skills**, **projects**, **internships**, **c
 
 ## 🚀 Live Demo
 
-🔗 [View My Portfolio](https://annamchittimounika.github.io/portfolio/)  
+🔗 [View My Portfolio](https://annamchittimounika.github.io/Personal-Portfolio/)  
 
 ---
 
