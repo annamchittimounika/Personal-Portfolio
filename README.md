@@ -37,7 +37,5 @@ I'm passionate about:
 - 📜 **Certifications**: AWS, SQL (Scaler), Node.js
 - 🏆 **Achievement**: All India Rank 39,050 in AINCAT 2025
 
----
 
-## 📁 Project Structure
 
